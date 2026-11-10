@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "output_dir": "output",
+  "review_dir": "review",
+  "rules": [
+    {
+      "id": "invoice",
+      "label": "חשבונית",
+      "keywords": [
+        "חשבונית מס",
+        "חשבונית מס קבלה"
+      ],
+      "filename": "{type}_{number}.pdf",
+      "number_pattern": "(?:מספר|מס[׳\\']?)\\s*[:#]?\\s*([0-9][0-9/-]{2,})"
+    },
+    {
+      "id": "delivery",
+      "label": "תעודת משלוח",
+      "keywords": [
+        "תעודת משלוח"
+      ],
+      "filename": "{type}_{number}.pdf",
+      "number_pattern": "(?:מספר|מס[׳\\']?)\\s*[:#]?\\s*([0-9][0-9/-]{2,})"
+    }
+  ]
+}

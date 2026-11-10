@@ -1,0 +1,1 @@
+"""Teudot document automation prototype."""
